@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavis.HttpResponseMachine", "Tavis.HttpResponseMachine\Tavis.HttpResponseMachine.csproj", "{2F00C1F7-D0EC-4139-8307-0FAB1F3869E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpResponseMachine", "src\HttpResponseMachine\HttpResponseMachine.csproj", "{2F00C1F7-D0EC-4139-8307-0FAB1F3869E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpResponseMachineTests", "src\HttpResponseMachineTests\HttpResponseMachineTests.csproj", "{848C5E4A-2BC6-4B46-BAA4-12AA399161EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A423DD46-C368-4EA7-B573-FCF8BFB10E2B}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+		ReleaseNotes.md = ReleaseNotes.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{369D79D7-FCF6-492C-943F-DFE5EDCBC052}"
+	ProjectSection(SolutionItems) = preProject
+		build\Build.proj = build\Build.proj
+		build\Tavis.HttpResponseMachine.nuspec = build\Tavis.HttpResponseMachine.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +29,15 @@ Global
 		{2F00C1F7-D0EC-4139-8307-0FAB1F3869E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F00C1F7-D0EC-4139-8307-0FAB1F3869E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F00C1F7-D0EC-4139-8307-0FAB1F3869E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848C5E4A-2BC6-4B46-BAA4-12AA399161EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848C5E4A-2BC6-4B46-BAA4-12AA399161EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848C5E4A-2BC6-4B46-BAA4-12AA399161EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848C5E4A-2BC6-4B46-BAA4-12AA399161EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{369D79D7-FCF6-492C-943F-DFE5EDCBC052} = {A423DD46-C368-4EA7-B573-FCF8BFB10E2B}
 	EndGlobalSection
 EndGlobal
